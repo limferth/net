@@ -79,7 +79,8 @@ nav .ul-nav-links li a:hover{
 
 nav .btn,
 .main .btn,
-.cta .btn{
+.cta .btn,
+.about .right .btn{
     color: #fff;
     background-color: var(--blue-sky);
     padding: 12px 16px;
@@ -279,6 +280,9 @@ nav button#menu-button{
     gap:48px;
     padding: 0 148px 80px;
 }
+.testimonios .content .content-item{
+    cursor: pointer;
+}
 .testimonios .content .content-item:nth-child(1){
     background-color: var(--blue-green);
     color: var(--white);
@@ -328,6 +332,7 @@ nav button#menu-button{
     display: flex;
     flex-direction: column;
     gap: 16px;
+        cursor: pointer;
 }
 .numbers .content-numbers .item h3{
     font-size: 3.2rem;
@@ -440,4 +445,179 @@ footer .column a:hover{
     color: #fff;
     font-size: 1.2rem;
     text-align: center;
+}
+
+/* ABOUT PAGE */
+
+.titulo{
+    padding: 48px 148px 40px;
+}
+.titulo h2{
+    font-size: 4rem;
+    text-align: center;
+    color: var(--blue-green);
+}
+.about{
+    display: flex;
+    align-items: center;
+    padding: 0 148px 60px;
+    gap: 48px;
+}
+.about .left img{
+    width: 500px;
+    border-radius: 24px;
+}
+.about .right{
+    display: flex;
+    flex-direction: column;
+    gap:32px;
+}
+
+.about .right h3{
+    font-size: 3.2rem;
+}
+.about .right p{
+    font-size: 1.6rem;
+    line-height: 2.4rem;
+}
+
+.about .right .info-down{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .right .info-down .specific .datos{
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px;
+    gap: 40px;
+}
+
+.about .right .info-down .specific .datos h5{
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+
+.about .right .info-down .specific .datos p{
+    font-size: 1.4rem;
+}
+.about .buttons{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.about .right .btn:hover{
+    background-color: #362694;
+    color: var(--white);
+}
+/* servive */
+.service{
+    padding: 20px 148px 80px;
+}
+.service .service-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.service .service-container .item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    width: 30%;
+    margin-bottom: 24px;
+}
+.service .service-container .item .item-title{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.service .service-container .item .item-title i{
+    font-size: 4rem;
+    padding: 10px;
+    color: var(--white);
+    background-color: var(--blue-green);
+    border-radius: 100%;
+}
+
+.service .service-container .item .item-title h3{
+    font-size: 1.8rem;
+}
+.service .service-container .item p{
+    font-size: 1.6rem;
+    text-align: center;
+}
+.service .service-container .item a{
+    font-size: 1.6rem;
+    padding-top: 8px;
+    border-bottom: 1px solid var(--blue);
+    color: var(--blue-sky);
+    transition: all0.3s ease;
+}
+
+.service .service-container .item a:hover{
+    color: var(--blue-white);
+    border-bottom: transparent;
+}
+/* skills */
+.skills{
+    padding: 60px 148px 60px;
+
+}
+.skills .skills-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 64px;
+}
+.skills .skills-item i{
+    font-size: 6.4rem;
+    color: var(--blue);
+    cursor: pointer;
+}
+/* experience section */
+.ex-ed{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px 148px 80px;
+}
+.ex-ed .ex-ed-item h3{
+    margin-bottom: 20px;
+    font-size: 3rem;
+    font-weight: 700;
+}
+.ex-ed .ex-ed-item .item{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    margin-bottom: 24px;
+}
+
+.ex-ed .ex-ed-item .item h4{
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+
+.ex-ed .ex-ed-item .item .details{
+    display: flex;
+    gap: 8px;
+}
+
+.ex-ed .ex-ed-item .item .details h5{
+    font-size: 1.6rem;
+    font-weight: 400;
+
+}
+
+.ex-ed .ex-ed-item .item .details p{
+    font-size: 1.6rem;
+}
+.ex-ed .ex-ed-item .item p{
+    font-size: 1.6rem;
 }
