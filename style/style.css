@@ -216,6 +216,7 @@ nav button#menu-button{
     justify-content: space-between;
     gap:20px;
     padding: 0 148px 80px;
+    flex-wrap: wrap;
 }
 
 .works .container .item{
@@ -277,6 +278,7 @@ nav button#menu-button{
 .testimonios .content{
     display: flex;
     justify-content: space-between;
+    flex-wrap: nowrap;
     gap:48px;
     padding: 0 148px 80px;
 }
@@ -620,4 +622,124 @@ footer .column a:hover{
 }
 .ex-ed .ex-ed-item .item p{
     font-size: 1.6rem;
+}
+
+/* blogs page */
+
+.blogs{
+    padding: 80px 148px 80px;
+}
+
+.blogs .blogs-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* width: 30%; */
+    gap: 48px;
+}
+
+.blogs .blogs-container .blogs-container-item{
+    width: 340px;
+}
+.blogs .blogs-container .blogs-container-item img{
+    width: 340px;
+}
+
+.blogs .blogs-container .blogs-container-item .description-blog{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.blogs .blogs-container .blogs-container-item .description-blog h4{
+    font-size: 2rem;
+}
+.blogs .blogs-container .blogs-container-item .description-blog p{
+    font-size: 1.6rem;
+}
+.blogs .blogs-container .blogs-container-item .description-blog a{
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    padding: 8px 12px;
+    width: 112px;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.blogs .blogs-container .blogs-container-item .description-blog a:hover{
+    background-color: var(--blue-green);
+    border: transparent;
+    color: var(--white);
+}
+
+/* contact section */
+.contact {
+    padding: 80px 148px 80px;
+    display: flex;
+    flex-direction: column;
+}
+.contact .forms label input{
+    padding: 12px;
+    border-radius: 24px;
+    border: 1px  solid var(--blue-green);
+    font-size: 1.6rem;
+    transition: all0.3s ease;
+}
+/* .contact .forms label input:hover{
+    border: 1px solid var(--blue);
+    background-color: #024873;
+} */
+
+.contact .contact-forms{
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+    align-items: center;
+    justify-content: center;
+}
+.contact .contact-forms .forms-top form{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    width: 100%;
+}
+.contact .contact-forms .forms-top form label input{
+    width: 500px;
+}
+
+.contact .contact-forms .forms-medium form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 48px;
+
+}
+.contact .contact-forms .forms-medium form label input{
+    width: 1080px;
+}
+.contact .contact-forms .forms-medium .message input{
+    height: 250px;
+}
+
+.contact .contact-forms button{
+    width: 150px;
+    padding: 8px 12px;
+    border-radius: 24px;
+    border: 1px solid var(--blue-green);
+    background-color: var(--blue-green);
+    color: var(--white);
+    font-size: 1.6rem;
+    transition: all0.3s ease;
+}
+.contact .contact-forms button:hover{
+    border: 1px solid (--blue-green);
+    background-color: var(--white);
+    color: var(--black);
 }
