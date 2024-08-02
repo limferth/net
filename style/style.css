@@ -67,7 +67,7 @@ nav .nav-logo img{
 }
 nav .ul-nav-links li a{
     color:var(--white);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 500;
     transition: color 0.3s ease;
 }
@@ -121,15 +121,22 @@ nav button#menu-button{
 }
 
 .main .right h1{
-    font-size: 4.8rem;
+    font-size: 2.4rem;
     margin-bottom: 30px;
     color: var(--white);
 }
 .main .right h3{
-    font-size: 2.4rem;
-    font-weight: 400;
+    font-size: 4rem;
+    font-weight: 700;
     color: var(--white);
-    margin-bottom: 64px;
+    margin-bottom: 32px;
+}
+.main .right p{
+    font-size: 1.6rem;
+    color: var(--white);
+    font-weight: 300;
+    line-height: 2.4rem;
+    margin-bottom: 32px;
 }
 
 .main .btn{
@@ -189,7 +196,6 @@ nav button#menu-button{
 .works,
 .testimonios,
 .numbers{
-    /* height: 900px; */
     background-color: #F0EEEE;
     
 }
@@ -277,7 +283,6 @@ nav button#menu-button{
 
 .testimonios .content{
     display: flex;
-    justify-content: space-between;
     flex-wrap: nowrap;
     gap:48px;
     padding: 0 148px 80px;
@@ -387,10 +392,17 @@ footer{
     background-color: #18181b;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     padding: 80px 148px 80px;
     color: var(--white);
+    gap: 100px;
 
+}
+footer .column-ultra{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 120px;
 }
 footer .column{
     display: flex;
@@ -486,13 +498,15 @@ footer .column a:hover{
 .about .right .info-down{
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    width: 100%;
+    gap: 24px;
 }
 .about .right .info-down .specific .datos{
     display: flex;
     align-items: center;
     margin-bottom: 12px;
-    gap: 40px;
+    gap: 16px;
 }
 
 .about .right .info-down .specific .datos h5{
@@ -635,15 +649,15 @@ footer .column a:hover{
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    /* width: 30%; */
-    gap: 48px;
+    gap: 40px;
 }
 
 .blogs .blogs-container .blogs-container-item{
-    width: 340px;
+    width: 30%;
 }
 .blogs .blogs-container .blogs-container-item img{
-    width: 340px;
+    width: 100%;
+    height: 100%;
 }
 
 .blogs .blogs-container .blogs-container-item .description-blog{
@@ -742,4 +756,385 @@ footer .column a:hover{
     border: 1px solid (--blue-green);
     background-color: var(--white);
     color: var(--black);
+}
+/* responsive */
+@media screen and (max-width: 1200px){
+    .main{
+        padding: 0 85px;
+    }
+    .join{
+        padding: 32px 85px;
+    }
+    .info{
+        padding: 48px 85px 0;
+    }
+    .works .sub-title,
+    .testimonios .sub-title{
+        padding: 60px 85px;
+    }
+    .works .container,
+    .testimonios .content{
+        padding: 0 85px 60px;
+    }
+    .numbers .content-numbers{
+        padding: 100px 85px 40px;
+    }
+    .cta{
+        padding: 80px 85px 80px;
+    }
+    footer{
+        padding: 80px 42px 80px;
+        gap: 70px;
+    }
+    footer .column-ultra  .column .socials{
+        gap: 16px;
+    }
+    /* about page */
+    .titulo{
+        padding: 48px 85px 48px;
+    }
+    .about{
+        padding: 0 85px 48px;
+        gap: 24px;
+    }
+    .about .left img{
+        width: 400px;
+    }
+    .service{
+        padding: 20px 85px 60px;
+    }
+    .skills{
+        padding: 60px 85px 60px;
+    }
+    .ex-ed{
+        padding: 20px 85px 60px;
+    }
+    /* blog section */
+    .blogs{
+        padding: 60px 85px 60px;
+    }
+    .blogs .blogs-container{
+        gap: 24px;
+    }
+    .blogs .blogs-container .blogs-container-item img{
+        width: 100%;
+    }
+}
+@media screen and (max-width: 992px){
+    nav{
+        padding: 0 42px;
+    }
+    .main{
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 60px 42px;
+    }
+    .main .left img{
+        width: 100%;
+        height: auto;
+    }
+    .main .right h1{
+        font-size: 3.2rem;
+    }
+    .join{
+        padding: 32px 42px;
+    }
+    .join .join-me h4{
+        font-size: 3.2rem;
+    }
+    .join .join-me .socials a{
+        font-size: 4.8rem;
+    }
+    .info{
+        padding: 42px 42px 0;
+    }
+    .info h2{
+        font-size: 2.4rem;
+    }
+    .works .sub-title,
+    .testimonios .sub-title{
+        padding: 48px 42px;
+    }
+    .works .sub-title h3,
+    .testimonios .sub-title{
+        font-size: 3.2rem;
+    }
+    .works .container{
+        padding: 0 42px 40px;
+        gap: 12px;
+    }
+    .works .container .item{
+        width: 49%;
+        gap: 12px;
+    }
+    .testimonios .content{
+        padding: 0 42px 40px;
+    }
+    .numbers .content-numbers{
+        padding: 80px 42px 40px;
+    }
+    .numbers .content-numbers .item h3{
+        font-size: 2.4rem;
+    }
+    .numbers .content-numbers .item p{
+        font-size: 1.6rem;
+    }
+    .cta{
+        padding: 60px 42px 60px;
+    }
+    .cta .contenido h2{
+        font-size: 3.2rem;
+    }
+    footer{
+        padding: 80px 16px 80px;
+        gap: 50px;
+    }
+    footer .column-ultra  .column .socials{
+        gap: 16px;
+    }
+    footer .column a{
+        font-size: 1.4rem;
+        font-weight: 300;
+    }
+    footer .column .socials a i{
+        font-size: 2.4rem;
+    }
+    .titulo{
+        padding: 48px 42px 32px;
+    }
+    .titulo h2{
+        font-size: 3.2rem;
+    }
+    .about{
+        flex-direction: column;
+        padding: 0 42px 48px;
+    }
+    .about .left img{
+        width: 100%;
+    }
+    .about .right .info-down{
+        gap: 80px;
+    }
+    .about .buttons{
+        justify-content: center;
+        gap: 80px;
+    }
+    .service{
+        padding: 20px 42px 48px;
+    }
+    .service .service-container .item{
+        width: 49%;
+    }
+    .skills{
+        padding: 48px 42px 48px;
+    }
+    .ex-ed{
+        padding: 20px 42px 60px;
+    }
+    .blogs{
+        padding: 48px 42px 48px;
+    }
+    .blogs .blogs-container{
+        gap: 12px;
+    }
+    .blogs .blogs-container .blogs-container-item{
+        width: 49%;
+    }
+}
+
+@media screen and (max-width: 900px){
+    nav .btn{
+        display: none;
+    }
+    .testimonios .content{
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+    .testimonios .content .content-item{
+        width: 46%;
+    }
+    footer{
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    footer .column{
+        width: 45%;
+    }
+    footer .column-ultra{
+        width: 100%;
+        justify-content: space-around;
+        gap: 12px;
+    }
+}
+@media screen and (max-width: 768px){
+    nav .nav-logo a img{
+        width: 4rem;
+    }
+    nav .nav-logo a p{
+        font-size: 2.4rem;
+    }
+    nav .ul-nav-links{
+        display: none;
+    }
+    nav.open ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        padding: 500px 85px 24px 20px;
+        background-color: var(--blue-dark);
+        border-radius: 12px;
+    }
+    nav button#menu-button {
+        display: flex;
+        border: transparent;
+        background-color: var(--blue-dark);
+        color: var(--white);
+        font-size: 3rem;
+    }
+    .main .right h1,
+    .main .right h3{
+        margin-bottom: 16px;
+    }
+    .join .join-me h4{
+        font-size: 2.4rem;
+    }
+    .join .join-me .socials{
+        gap: 32px;
+    }
+    .join .join-me .socials a {
+        font-size: 3.2rem;
+    }
+    .works .container .item{
+        width: 100%;
+    }
+    .testimonios .content .content-item{
+        width: 100%;
+    }
+    footer .column .socials{
+        flex-wrap: wrap;
+    }
+    /* about page */
+    .about .right .info-down{
+        flex-direction: column;
+        gap: 40px;
+    }
+    .about .right .info-down .specific{
+        width: 100%;
+    }
+    .about .right .info-down .specific .datos h5{
+        width: 150px;
+    }
+    .service .service-container .item{
+        width: 100%;
+    }
+    .skills .skills-item{
+        flex-wrap: wrap;
+    }
+    .ex-ed{
+        flex-direction: column;
+    }
+    .ex-ed .ex-ed-item h3{
+        text-align: center;
+        margin-bottom: 40px;
+    }
+    /* blog page */
+    .blogs .blogs-container{
+        flex-direction: column;
+        gap: 48px;
+    }
+    .blogs .blogs-container .blogs-container-item{
+        width: 100%;
+    }
+    .blogs .blogs-container .blogs-container-item img{
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: top;
+    }
+}
+@media screen and (max-width: 576px){
+    nav{
+        padding: 0 16px;
+    }
+    .main{
+        padding: 56px 16px;
+    }
+    .main .right h1{
+        font-size: 2.4rem;
+        margin-bottom: 12px;
+    }
+    .main .right h3{
+        font-size: 2.4rem;
+        margin-bottom: 12px;
+    }
+    .join{
+        padding: 32px 16px;
+    }
+    .join .join-me{
+        gap: 32px;
+        height: 80px;
+    }
+    .join .join-me h4{
+        font-size: 1.8rem;
+    }
+    .join .join-me .socials{
+        gap: 12px;
+    }
+
+    .info{
+        padding: 32px 16px 0;
+    }
+    .info h2{
+        font-size: 1.6rem;
+    }
+    .works .sub-title,
+    .testimonios .sub-title{
+        padding: 32px 16px;
+    }
+    .works .sub-title h3,
+    .testimonios .sub-title h3{
+        font-size: 2.4rem;
+    }
+    .works .sub-title a{
+        font-size: 1.6rem;
+    }
+    .works .container{
+        padding: 0 16px 32px;
+    }
+    .testimonios .content{
+        padding: 0 16px 32px;
+    }
+    .numbers .content-numbers{
+        padding: 60px 16px 40px;
+    }
+    .numbers .content-numbers .item h3{
+        font-size: 1.6rem;
+    }
+    .numbers .content-numbers .item p{
+        font-size: 1.4rem;
+    }
+    .cta{
+        padding: 60px 16px 60px;
+    }
+    .cta .contenido{
+        gap: 32px;
+        padding: 32px 0;
+    }
+    .cta .contenido h2{
+        font-size: 2.4rem;
+        text-align: center;
+    }
+    /* pblogs page */
+    .blogs{
+        padding: 48px 16px 48px;
+    }
+    .blogs .blogs-container .blogs-container-item img{
+        width: 100%;
+        height: 100%;
+}
+@media screen and (max-width: 435px){
+    nav.open ul{
+        padding: 500px 6px 24px 6px;
+    }
 }
