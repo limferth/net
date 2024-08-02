@@ -713,7 +713,7 @@ footer .column a:hover{
 } */
 
 .form{
-    padding: 80px 148px 80px;
+    padding: 80px 300px 80px;
 }
 .form .input-group{
     display: flex;
@@ -812,7 +812,7 @@ footer .column a:hover{
     }
     /* contact page */
     .form{
-        padding: 80px 42px 80px;
+        padding: 80px 148px 80px;
     }
 }
 @media screen and (max-width: 992px){
@@ -935,6 +935,7 @@ footer .column a:hover{
     .blogs .blogs-container .blogs-container-item{
         width: 49%;
     }
+    
 }
 
 @media screen and (max-width: 900px){
@@ -959,6 +960,9 @@ footer .column a:hover{
         width: 100%;
         justify-content: space-around;
         gap: 12px;
+    }
+    .form{
+        padding: 80px 42px 80px;
     }
 }
 @media screen and (max-width: 768px){
