@@ -712,41 +712,28 @@ footer .column a:hover{
     background-color: #024873;
 } */
 
-.contact .contact-forms{
+.form{
+    padding: 80px 148px 80px;
+}
+.form .input-group{
     display: flex;
     flex-direction: column;
-    gap: 48px;
-    align-items: center;
     justify-content: center;
+    align-items: center;
+    gap: 40px;
 }
-.contact .contact-forms .forms-top form{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    gap: 80px;
+.form .input-group input{
+    padding: 16px;
+    border-radius: 24px;
+    border: 1px solid var(--blue-green);
     width: 100%;
+    font-size: 1.6rem;
 }
-.contact .contact-forms .forms-top form label input{
-    width: 500px;
-}
-
-.contact .contact-forms .forms-medium form{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 48px;
-
-}
-.contact .contact-forms .forms-medium form label input{
-    width: 1080px;
-}
-.contact .contact-forms .forms-medium .message input{
-    height: 250px;
+.form .input-group input:nth-child(4){
+    height: 200px;
 }
 
-.contact .contact-forms button{
+.form .input-group button{
     width: 150px;
     padding: 8px 12px;
     border-radius: 24px;
@@ -756,7 +743,7 @@ footer .column a:hover{
     font-size: 1.6rem;
     transition: all0.3s ease;
 }
-.contact .contact-forms button:hover{
+.form .input-group button:hover{
     border: 1px solid (--blue-green);
     background-color: var(--white);
     color: var(--black);
@@ -822,6 +809,10 @@ footer .column a:hover{
     }
     .blogs .blogs-container .blogs-container-item img{
         width: 100%;
+    }
+    /* contact page */
+    .form{
+        padding: 80px 42px 80px;
     }
 }
 @media screen and (max-width: 992px){
@@ -1038,6 +1029,9 @@ footer .column a:hover{
     .ex-ed{
         flex-direction: column;
     }
+    .ex-ed .ex-ed-item{
+        width: 100%;
+    }
     .ex-ed .ex-ed-item h3{
         text-align: center;
         margin-bottom: 40px;
@@ -1136,6 +1130,9 @@ footer .column a:hover{
     .blogs .blogs-container .blogs-container-item img{
         width: 100%;
         height: 100%;
+    }
+    .form{
+        padding: 40px 16px 40px;
     }
 }
 @media screen and (max-width: 435px){
