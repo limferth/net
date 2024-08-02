@@ -598,16 +598,20 @@ footer .column a:hover{
 /* experience section */
 .ex-ed{
     display: flex;
-    align-items: center;
     justify-content: space-between;
     gap: 20px;
     padding: 20px 148px 80px;
 }
+.ex-ed .ex-ed-item{
+    width: 49%;
+}
 .ex-ed .ex-ed-item h3{
-    margin-bottom: 20px;
+    margin-bottom: 40px;
     font-size: 3rem;
     font-weight: 700;
+    text-align: center;
 }
+
 .ex-ed .ex-ed-item .item{
     display: flex;
     flex-direction: column;
@@ -1132,6 +1136,7 @@ footer .column a:hover{
     .blogs .blogs-container .blogs-container-item img{
         width: 100%;
         height: 100%;
+    }
 }
 @media screen and (max-width: 435px){
     nav.open ul{
