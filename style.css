@@ -749,6 +749,121 @@ footer .column a:hover{
     background-color: var(--white);
     color: var(--black);
 }
+
+/* Blog */
+.all{
+    background-color: #1e1e1e;
+    color: #fff;
+    padding: 80px 148px 80px;
+}
+.all h1 {
+    margin-bottom: 32px;
+    font-size: 4.8rem;
+}
+.all .autor{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+    padding-bottom: 36px;
+}
+.all  .autor img {
+    height: 56px;
+    border-radius: 100%;
+}
+.all .autor .descripcion {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+}
+.all .autor .descripcion h4{
+    font-size: 1.6rem;
+    font-weight: 300;
+}
+.all .autor .descripcion h5{
+    font-size: 1.4rem;
+    font-weight: 200;
+}
+.imagen-principal img{
+    width: 100%;
+}
+.contenido{
+    padding: 24px 0 24px 0;
+}
+.contenido p{
+    width: 100%;
+    font-size: 1.6rem;
+    font-weight: 400;
+    padding-bottom: 36px;
+    line-height: 24px;
+}
+.video {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    aspect-ratio: 16/9;
+}
+.video iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+h6 {
+    padding-top: 84px;
+    padding-bottom: 148px;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+.blog .blogs-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 24px;
+}
+
+.blog .blogs-container .blogs-container-item{
+    width: 30%;
+}
+.blog .blogs-container .blogs-container-item img{
+    width: 100%;
+    height: 100%;
+}
+
+.blog .blogs-container .blogs-container-item .description-blog{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    padding: 8px 0;
+}
+
+.blog .blogs-container .blogs-container-item .description-blog h4{
+    font-size: 2rem;
+}
+.blog .blogs-container .blogs-container-item .description-blog p{
+    font-size: 1.6rem;
+}
+.blog .blogs-container .blogs-container-item .description-blog a{
+    background-color: var(--white);
+    border: 1px solid var(--blue);
+    padding: 8px 12px;
+    width: 112px;
+    text-align: center;
+    border-radius: 24px;
+    font-size: 1.6rem;
+    transition: all 0.3s ease;
+}
+
+.blog .blogs-container .blogs-container-item .description-blog a:hover{
+    background-color: var(--blue-green);
+    border: transparent;
+    color: var(--white);
+}
 /* responsive */
 @media screen and (max-width: 1200px){
     .main{
