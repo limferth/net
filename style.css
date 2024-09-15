@@ -754,7 +754,7 @@ footer .column a:hover{
 .all{
     background-color: #1e1e1e;
     color: #fff;
-    padding: 80px 148px 80px;
+    padding: 80px 300px 80px;
 }
 .all h1 {
     margin-bottom: 32px;
@@ -794,11 +794,12 @@ footer .column a:hover{
     padding: 24px 0 24px 0;
 }
 .contenido p{
+    color: #c5c6c7;
     width: 100%;
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     font-weight: 400;
     padding-bottom: 36px;
-    line-height: 24px;
+    line-height: 32px;
 }
 .video {
     position: relative;
@@ -816,8 +817,12 @@ footer .column a:hover{
 h6 {
     padding-top: 84px;
     padding-bottom: 148px;
-    font-size: 1.6rem;
+    font-size: 2.4rem;
     font-weight: 600;
+}
+.blog{
+    padding: 84px 185px 84px;
+    background-color: #0a0b0c;
 }
 .blog .blogs-container{
     display: flex;
@@ -844,9 +849,11 @@ h6 {
 
 .blog .blogs-container .blogs-container-item .description-blog h4{
     font-size: 2rem;
+    color: #fff;
 }
 .blog .blogs-container .blogs-container-item .description-blog p{
     font-size: 1.6rem;
+    color: #c5c6c7;
 }
 .blog .blogs-container .blogs-container-item .description-blog a{
     background-color: var(--white);
@@ -929,6 +936,10 @@ h6 {
     /* contact page */
     .form{
         padding: 80px 148px 80px;
+    }
+    /* blog  */
+    .all {
+        padding: 64px 112px 64px;
     }
 }
 @media screen and (max-width: 992px){
@@ -1051,6 +1062,15 @@ h6 {
     .blogs .blogs-container .blogs-container-item{
         width: 49%;
     }
+    /* section blog */
+    .blog .blogs-container {
+        flex-wrap: wrap;
+        gap: 12px;
+        justify-content: start;
+    }
+    .blog .blogs-container .blogs-container-item{
+        width: 49%;
+    }
     
 }
 
@@ -1079,6 +1099,9 @@ h6 {
     }
     .form{
         padding: 80px 42px 80px;
+    }
+    .all {
+        padding: 64px 84px 64px;
     }
 }
 @media screen and (max-width: 768px){
@@ -1170,6 +1193,12 @@ h6 {
         object-fit: cover;
         object-position: top;
     }
+    /* section blog */
+
+    .blog .blogs-container .blogs-container-item{
+        width: 100%;
+    }
+
 }
 @media screen and (max-width: 576px){
     nav{
@@ -1253,6 +1282,22 @@ h6 {
     }
     .form{
         padding: 40px 16px 40px;
+    }
+    /* section blog */
+    .all {
+        padding: 56px 16px;
+    }
+    .all h1{
+        font-size: 3.2rem;
+    }
+    .all .autor .descripcion h4{
+        font-size: 1.4rem;
+    }
+    .all .autor .descripcion h5{
+        font-size: 1.4rem;
+    }
+    .all .contenido p{
+        font-weight: 300;
     }
 }
 @media screen and (max-width: 435px){
