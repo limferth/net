@@ -855,6 +855,10 @@ h6 {
     font-size: 1.6rem;
     color: #c5c6c7;
 }
+.negrilla{
+    color: #fff;
+    font-weight: 700;
+}
 .blog .blogs-container .blogs-container-item .description-blog a{
     background-color: var(--white);
     border: 1px solid var(--blue);
