@@ -1075,6 +1075,9 @@ h6 {
     .blog .blogs-container .blogs-container-item{
         width: 49%;
     }
+    .blog{
+        padding: 64px 84px 64px;
+    }
     
 }
 
@@ -1104,7 +1107,7 @@ h6 {
     .form{
         padding: 80px 42px 80px;
     }
-    .all {
+    .all{
         padding: 64px 84px 64px;
     }
 }
@@ -1201,6 +1204,9 @@ h6 {
 
     .blog .blogs-container .blogs-container-item{
         width: 100%;
+    }
+    .blog{
+        padding: 48px 16px;
     }
 
 }
